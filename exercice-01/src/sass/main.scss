@@ -1,0 +1,130 @@
+// Variables
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 1366px;
+  height: 720px;
+  background-color: $background-color;
+  font-family: degular, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  .frame {
+    width: 502.59px;
+    height: 340.81px;
+  }
+
+  .bigstar {
+    width: 174.04px;
+    height: 174.04px;
+    margin: 11.39px;
+  }
+}
+
+main {
+  text-align: center;
+  margin: auto;
+
+  .logo {
+    position: absolute;
+    top: 171px;
+    right: 568px;
+    width: 202px;
+    height: 63px;
+    margin: auto;
+  }
+
+  h1 {
+    position: absolute;
+    top: 246px;
+    right: 225px;
+    width: 916px;
+    height: 143px;
+    font-family: degular-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    color: $light-blue;
+    padding: 51px 130px;
+    z-index: 2;
+  }
+
+  .middlestar {
+    position: absolute;
+    top: 286px;
+    right: 975px;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+  }
+
+  .littlestar {
+    position: absolute;
+    top: 429px;
+    right: 255px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.rectangle {
+  display: flex;
+  flex-direction: column;
+  width: 460px;
+  margin: auto;
+
+  &__Orange {
+    position: absolute;
+    top: 525px;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    width: 420px;
+    height: 74px;
+    background-color: $light-orange;
+    transform: rotate(-3deg);
+    z-index: 3;
+
+    a {
+      color: $white;
+      text-decoration: none;
+      font-family: degular, sans-serif;
+      font-size: 24px;
+      padding-top: 18px;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__Rouge {
+    position: absolute;
+    top: 544.98px;
+    right: 461.94px;
+    width: 450.87px;
+    height: 79.44px;
+    background-color: $dark-orange;
+    z-index: 2;
+  }
+
+  &__Ellipse {
+    position: absolute;
+    top: 560px;
+    right: 770px;
+    width: 280px;
+    height: 140px;
+    z-index: 1;
+  }
+}
